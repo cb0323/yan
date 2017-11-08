@@ -1,0 +1,1027 @@
+﻿a{text-decoration: none;color: #606060}
+ul{list-style: none;}
+body{background: #F9F9F9;}
+.box{
+    width: 1200px;
+    margin: 0 auto;
+}
+.dh{
+    background: #FFFFFF;
+    width: 100%;
+}
+.dh .top{
+    background: #fafafa;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #dbdbdb;
+}
+/*关于首页的所有样式修饰*/
+.page-wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.page-wrap span a:hover{
+    color: #ff2832;
+}
+.topHead{
+    background-color: rgb(249,249,249);
+    height: 34px;
+    line-height: 34px;
+    width: 100%;
+    border-bottom: rgb(242,242,242) 2px solid;
+    min-width: 1200px;/*最小宽度*/
+}
+.top-links{
+    float: right;
+    margin-right: 30px;
+}
+.top-links li{
+    float: left;
+    position: relative;
+}
+/*客户服务子菜单*/
+.top-links li .sub-menu{
+    position: absolute;
+    top: 34px;
+    background-color: white;
+    border: 1px solid rgb(200,200,200);
+    border-top: none;
+    width: 100%;
+    display: none;
+    left: 1px;
+    width: calc(100% - 9px);
+}
+/*当鼠标悬停在“客户服务”那个li上时，子菜单(.sub-menu)显示出来*/
+.top-links li.has-menu:hover .sub-menu{
+    display: block;
+}
+/*当鼠标移动到“客户服务”超链接时，样式需要修改*/
+.top-links li.has-menu:hover>a{
+    background-color: white;
+    border: 1px solid rgb(200,200,200);
+    border-bottom: none;
+    margin: 0 1px;
+}
+.top-links li a{
+    color: rgb(100,100,100);
+    padding: 0 8px;
+    margin: 0 2px;
+}
+.top-links li a:hover{
+    color: #ff2832;
+    display: inline-block;
+}
+/*右侧导航后面的小竖线*/
+.top-links li:after{
+    /*方法1*/
+    /*content: '|';
+    display: inline-block;
+    width: 1px;
+    color: red;
+    font-size: 20px;
+    */
+
+    content: '';
+    display: inline-block;
+    width: 1px;
+    background-color: rgb(200,200,200);
+    height: 10px;
+}
+
+.top-links li .sub-menu li{
+    float: none;
+    line-height: 24px;
+    padding-left: 10px;
+    color: rgb(100,100,100);
+}
+.top-links li .sub-menu li:after{
+    display: none;
+}
+.logo{
+    width: 1200px;
+    height: 130px;
+    margin: 0 auto;
+    position: relative;
+}
+.logo img{
+    padding: 29px 0px;
+    float: left;
+}
+.search{
+    border: solid 2px rgb(254,60,60);
+    float: left;
+    position: relative;
+    top: 50px;
+    left: 150px;
+}
+.btn{
+    float: left;
+    background-color: rgb(254,60,60);
+    height: 35px;
+    width: 100px;
+    line-height: 35px;
+    border: none;
+    font-size: 18px;
+}
+.prt{
+    float: left;
+    width: 100px;
+    background-color:rgb(248,248,248);
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    height: 35px;
+    line-height: 35px;
+}
+.key-word{
+    float: left;
+    width: 420px;
+    height: 32px;
+    border: none;
+    font-size: 18px;
+    color: black;
+    padding-left: 10px;
+}
+.products{
+    float: left;
+    position: absolute;
+    top: 80px;
+    left: 237px;
+    color: rgb(165,164,172);
+}
+.left{
+    border-top: 2px solid rgb(252,63,75);
+}
+.left-left{
+    width: 110px;
+    height: 398px;
+    background-color: rgb(232,42,30);
+    float: left;
+}
+.left-lb{
+    background-color:rgb(193,49,49);
+    float: left;
+    width: 215px;
+}
+.left-lb ul{
+    padding-top: 2px;
+}
+.left-lb ul li{
+    line-height: 33px;
+}
+.left-lb ul li a{
+    color: white;
+}
+.left-lb ul li a:hover{
+    color:black;
+    text-decoration: underline;
+    font-size: 12px;
+}
+.banner{
+    position: relative;
+    float: left;
+}
+.page-con{
+    position: absolute;
+    bottom: 17px;
+    left: 320px;
+}
+.page-con li{
+    font-size: 12px;
+    display: inline-block; /*当display的属性为inline-block时 变成行内块元素*/
+    color: white;
+    background-color: darkgray;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.page-con li:hover{
+    background-color: rgb(254,60,60);
+}
+.recharge{
+    width: 240px;
+    float: left;
+}
+.recharge-photo{
+    border-bottom: solid 2px rgb(239,239,239);
+    color: rgba(28,27,40,0.71);
+}
+.recharge-photo a{
+    color: rgba(28,27,40,0.71);
+    display: inline-block;
+    margin: 0 13px;
+}
+.recharge-photo a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.recharge-photo img{
+    display: inline-block;
+    margin: 10px 13px 0 13px;
+}
+.recharge-news{
+    width: 240px;
+    border-bottom: solid 2px rgb(239,239,239);
+    line-height: 12px;
+}
+.recharge-news p{
+    color: rgba(24,37,40,0.85);
+    margin-left: 13px;
+    padding: 8px 0;
+}
+.recharge-news p:hover{
+    color: #ff2832;
+    text-decoration: underline;
+}
+.live-charge ul li a{
+    color: black;
+}
+.live-charge ul li a:hover{
+    color:red;
+}
+.live-charge ul li {
+    list-style: none;
+    display: inline-block;
+    width: 32%;
+    height: 30px;
+    text-align: center;
+    color: white;
+    background-color:rgb(200,200,200);
+}
+#empty{
+    float: left;
+    width: 103px;
+    height: 395px;
+    background-color: rgb(232,42,30);
+}
+.live-charge ul li:hover{
+    background-color: white;
+}
+#face-value{
+    color: #ff2832;
+}
+.but-value{
+    background-color: #ff2832;
+    color: white;
+    border: none;
+}
+.goods{
+    border: 1px solid yellowgreen;
+    width: 1200px;
+    margin: 0 auto;
+    clear: both;
+}
+.goods-nav{
+    border-bottom: 2px solid red;
+    height: 50px;
+}
+.goods-nav span{
+    color: #ff2832;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.goods-nav ul{
+    float: right;
+    margin-top: 25px;
+}
+.goods-nav ul li{
+    display:inline-block ;
+}
+.goods-nav ul li a{
+    color: rgba(33,38,40,0.61);
+}
+.goods-nav ul li a:hover{
+    color:red;
+    text-decoration: underline;
+}
+.goods-nav ul li a:after{
+    content: "|";
+    display: inline-block;
+    width: 1px;
+    margin: 0 5px;
+    font-size: 8px;
+}
+.goods-nav ul li .later:after{
+    display: none;
+}
+.goods-left{
+    float: left;
+}
+.goods-left span{
+    display: inline-block;
+    width: 210px;
+    text-align: center;
+}
+.goods-left p{
+    line-height: 20px;
+}
+.goods-left p a{
+    color: black;
+    display: inline-block;
+    margin: 5px;
+    padding-left: 20px;
+}
+.goods-left p a:hover{
+    color: #ff2832;
+    text-decoration: underline;
+}
+.sp1{
+    font-family: 微软雅黑;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff2832;
+}
+.sp2{
+    color: rgba(20,27,40,0.3);
+}
+.goods-left-1{
+    position: relative;
+}
+.goods-left-1 ul{
+    position: absolute;
+    bottom: 15px;
+    left: 335px;
+}
+.goods-left-1 ul li{
+    list-style: none;
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    background-color: darkgrey;
+}
+.goods-left-1 ul li:hover{
+    background-color: #ff2832;
+}
+
+.bottom{
+    clear: both;
+
+}
+.bottom-text {
+    width: 1200px;
+    margin: 10px auto;
+    text-align: center;
+}
+.bottom-text ul li{
+    display: inline-block;
+}
+.bottom-text ul li:after{
+    content: '|';
+    display: inline-block;
+    width: 1px;
+    font-size: 8px;
+    color: rgba(27,40,35,0.43);
+    margin: 0px 15px;
+    text-align: center;
+}
+.bottom-text ul li a{
+    color: rgba(22,40,40,0.71);
+}
+.bottom-text ul li a:hover{
+    color: #ff2832;
+    text-decoration: underline;
+}
+.bottom-text ul .late:after{
+    display: none;
+}
+.dh .center{
+    height: 90px;
+    line-height:90px;
+}
+.center-left{
+    float: left;
+    width: 210px;
+    height: 72px;
+    position: relative;
+}
+.center-left img{
+    vertical-align: middle;
+}
+.center-right{
+    float: left;
+    margin-left: 100px;
+    position: relative;
+    /*border: 1px solid red;*/
+    padding-top: 25px;
+    width: 528px;
+}
+.center-right .input{
+    float: left;
+}
+.center-right .input label{
+    display: inline-block;
+    background: #fafafa;
+    height: 28px;
+    line-height: 28px;
+    width: 68px;
+    border: solid red 2px;
+    text-align: center;
+    float: left;
+}
+.center-right .input input[type="text"]{
+    float: left;
+    height: 28px;
+    width: 340px;
+    border: 2px red solid;
+    border-left:none ;
+    padding-left:10px;
+}
+.center-right .ss{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    width: 98px;
+    background: red;
+    color: #ffffff;
+    float: left;
+    border: solid red 2px;
+    text-align: center;
+}
+.center-right p {
+    clear: both;
+    line-height: 24px;
+    color: #999999;
+    height: 24px;
+    position: relative;
+}
+.center-right p a{
+    padding: 0px 5px;
+}
+.dh .bottom{
+    height: 34px;
+    border-bottom: 2px red solid;
+    position: relative;
+    padding-top: 15px ;
+}
+.nav-left{
+    position: relative;
+    left: 0px ;
+    top: 0px;
+    float: left;
+    width: 210px;
+}
+.nav-list{
+    border-top: 2px solid #b01d1d;
+    background: #C23131;
+}
+.nav-left-2 li{
+    margin-bottom: 1px;
+    display: block;
+}
+.nav-left-2 li h3 a{
+    color: #fff;
+}
+.nav-right li{
+    display: inline-block;
+    /*border: 1px solid red;*/
+    float: left;
+    height: 34px;
+    line-height: 34px ;
+    font-weight: bold;
+    padding: 0px 20px;
+    font-size: 16px;
+}
+.nav-right{
+    float: left;
+    position: relative;
+}
+.nav-right  li:nth-child(1) a{color: red;}
+.nav-right  li:nth-child(2) a{color: red;}
+.nav-right  li:nth-child(3) a{color: red;}
+.nav-right  li a:hover{
+    font-size: 22px;
+    opacity: 0.3;}
+.lr{
+    background: #E82A1E;
+    height: 395px ;
+    width: 100%;
+}
+.jdt{
+    position: relative;
+    float: left;
+}
+.jdt .banner{
+    width: 750px;
+    height: 395px;
+    overflow: hidden;
+}
+.page-icon{
+    position: absolute;
+    bottom: 10px;
+    width:100%;
+    text-align: center;
+}
+.page-icon li{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: white;
+    margin: 0 7px;
+    cursor: pointer;
+}
+.page-icon li:hover{
+    background-color:#f51f12;
+}
+.news{
+    background: #FFFFFF;
+    height: 395px;
+    width: 240px;;
+    float: left;
+}
+.news-top{
+    height: 95px;
+    border-bottom: 1px solid #dbdbdb;
+    width:100%;
+    text-align: center;
+    position: relative;
+}
+.news-top ul li{
+    display: inline-block;
+    margin: 0 7px ;
+    cursor: pointer;
+}
+.news-top ul{
+    width:100%;
+    position: absolute;
+    top:10px;
+}
+.news-center{
+    height: 82px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.news-center ul{
+    padding-left: 15px;
+}
+.news-center ul li{
+    font-size: 12px;
+    padding: 5px 0;
+}
+.news-center ul li a:hover{
+    color:red;
+}
+.news-center ul li a span{
+    font-weight: bold;
+}
+.news-bottom{
+    position: relative;
+    font-family: "宋体";
+}
+.news-bottom .label{
+    height: 32px;
+    width:100%;
+    text-align: center;
+}
+.label ul li {
+    display: inline-block;
+    float: left;
+    height: 32px;
+    width: 33%;
+    line-height: 32px;
+    cursor: pointer;
+}
+.label .label-ul-li2{
+    border-left: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    background: #F7F7F7;
+}
+.label .label-ul-li1{
+    color: red;
+}
+.term label{
+    display: inline-block;
+    /*border: 1px red solid;*/
+    height: 22px;
+    line-height: 22px;
+    text-align: right;
+}
+.term select{
+    height: 22px;
+    line-height: 22px;
+    width: 100px;
+}
+.term input[type="text"]{
+    height: 22px;
+    line-height: 22px;
+    width: 100px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+.term span{
+    color: red;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    width: 100px;
+    text-align: left;
+}
+.term{
+    margin: 10px 0;
+    padding-left: 15px;
+}
+.term label{
+    width: 80px;
+    text-align: right;
+}
+.term input{margin-left: 6px;}
+.cz-btn{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    background: #FF4F4A;
+    margin-left:15px;
+    font-family: "宋体";
+    letter-spacing: 1px;
+}
+.food{
+    clear: both;
+    padding-top: 20px;
+}
+.food-head{
+    height: 32px;
+    line-height: 32px;
+    width:100%;
+    border-bottom: 2px solid red;
+}
+.food-head-left{
+    float: left;
+}
+.food-head-left a{
+    color: red;
+    font-size: 16px;
+}
+.food-head-right{
+    float: right;
+}
+.food-head-right a{
+    padding: 0 5px ;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.food-head-right a:hover{
+    color: red;
+}
+.food h3,.life h3{
+    font-size: 14px;
+    font-weight: normal;
+    height: 18px;
+    line-height: 18px;;
+}
+.food h4,.life h4{
+    font-weight:normal;
+    color: #98AEAB;
+    height: 24px;
+    line-height: 24px;;
+    /*padding: 0 30px;*/
+    margin-bottom: 10px
+}
+.food-a{
+    float: left;
+    height: 360px;
+    width: 209px;
+    background: #FFFFFF;
+    text-align: center;
+    overflow: hidden;
+    border-left: 1px solid #f4f4f4;
+}
+.food-a-ul{
+    height: 99px;
+    width:100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.food-a-ul a{
+    display:block;
+    position: relative;
+    border-bottom: 1px #f4f4f4 dashed;
+    float: left;
+    padding: 5px 0;
+    text-align: left;
+    tab-index: 5px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 5px ;
+    width: 80px;;
+}
+.food-a-ul a:hover{
+    color: red;
+}
+.food-a .pic{
+    display: block;
+    position: relative;
+    width:100%;
+    float: left;
+}
+.food-a .pic h3{
+    color: red;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.food-a .pic h4{
+    font-weight: normal;
+}
+.food-b{
+    float: left;
+    height: 360px;
+    width: 329px;
+    background: #FFFFFF;
+    overflow: hidden;
+    border-left:1px solid #f4f4f4;
+    position: relative;
+}
+.food-b-img{
+    position: relative;
+}
+.food-b-ul ul{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    bottom: 20px;;
+}
+.food-b-ul li{
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    background: #FFFFFF;
+    margin: 0 2px ;
+    cursor: pointer;
+}
+#food-a-ul-li{
+    background: red;
+}
+.food-c{
+    float: left;
+    height: 360px;
+    width: 219px;
+    background: #FFFFFF;
+    border-left:1px solid #f4f4f4;
+    overflow: hidden;
+}
+.food-c-1{
+    display: block;
+    height: 180px;
+    width:100%;
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.food-c-2{
+    display: block;
+    float: left;
+    height: 180px;
+    width:100%;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.food-d{
+    float: left;
+    height: 360px;
+    width: 219px;
+    background: #FFFFFF;
+    border-left:1px solid #f4f4f4;
+    overflow: hidden;
+    text-align: center;
+}
+.food-d a{
+    display: block;
+    width:100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.food-e{
+    float: left;
+    height: 360px;
+    width: 219px;
+    background: #FFFFFF;
+    border-left:1px solid #f4f4f4;
+    overflow: hidden;
+}
+.life{
+    clear: both;
+    padding-top: 20px;
+}
+.life-a{
+    float: left;
+    height: 540px;
+    width: 209px;
+    background: #FFFFFF;
+    border-left:1px solid #f4f4f4;
+    overflow: hidden;
+    text-align: center;
+}
+.life-head{
+    height: 32px;
+    line-height: 32px;
+    width:100%;
+    border-bottom: 2px solid #B4DB61;
+}
+.life-head-left{
+    float: left;
+}
+.life-head-left a{
+    color: #B4DB61;
+    font-size: 16px;
+}
+.life-head-right{
+    float: right;
+}
+.life-head-right a{
+    padding: 0 5px ;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.life-head-right a:hover{
+    color: red;
+}
+.life-a-ul{
+    height: 99px;
+    width:100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.life-a-ul a{
+    display:block;
+    position: relative;
+    border-bottom: 1px #f4f4f4 dashed;
+    float: left;
+    padding: 5px 0;
+    text-align: left;
+    tab-index: 5px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 5px ;
+    width: 80px;;
+}
+.life-a-ul a:hover{
+    color: red;
+}
+.life-a-1{
+    display: block;
+    height: 260px;
+    width:100%;
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+.life-a-1 h3{
+    font-size: 16px;
+    color: #B4DB61;
+}
+.life-a-2{
+    display: block;
+    height: 180px;
+    padding-top: 10px;
+    width:100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.life-b{
+    position: relative;
+    float: left;
+    height: 540px;
+    width: 329px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+.life-b-img{
+    position: relative;
+    float: left;
+    display: block;
+    height: 360px;
+    width: 329px;
+    overflow: hidden;
+}
+.life-b-ul{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    bottom: 200px;
+    float: left;
+    clear: both;
+}
+.life-b-ul li{
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    background: #E0DCDB;
+}
+#life-a-ul-li{
+    background: #F5433F;
+}
+.life-b-1{
+    float: left;
+    height: 179px;
+    width: 329px;
+    background: #FFFFFF;
+    overflow: hidden;
+    border-top: 1px solid #f4f4f4 ;
+    border-left: 1px solid #f4f4f4 ;
+}
+.life-b-1 a{
+    display: block;
+    position: relative;
+    padding: 15px 15px 0;
+}
+.life-b-1 span{
+    display:  block;
+    background: #FB3F4E;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+.life-b-1 h3{
+   padding-top: 20px;
+}
+.life-b-1 div{
+    width:130px;
+    padding: 15px 14px 0 15px;
+    float: left;
+}
+.life-b-1 img{
+    float: right;
+}
+.life-c{
+    float: left;
+    height: 540px;
+    width: 219px;
+    background: #FFFFFF;
+    border-left:1px solid #f4f4f4;
+    overflow: hidden;
+}
+.life-d{
+    float: left;
+    height: 540px;
+    width: 219px;
+    background: #FFFFFF;
+    border-left:1px solid #f4f4f4;
+    overflow: hidden;
+}
+.life-d-1{
+    float: left;
+    height: 360px;
+    width: 219px;
+    border-bottom:1px solid #f4f4f4;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.life-e{
+    float: left;
+    height: 540px;
+    width: 219px;
+    background: #FFFFFF;
+    border-left:1px solid #f4f4f4;
+    overflow: hidden;
+}
+.life-e-1{
+    border-bottom:1px solid #f4f4f4;
+}
+.life-e-2{
+    float: left;
+    height: 360px;
+    width: 219px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.db{
+    clear: both;
+    text-align: center;
+
+}
+.dc-bg1{
+    height: 30px;
+    width: 100%;
+}
+.dc-bg2{
+    background: #FFFFFF;
+    padding: 20px 0;
+}
+.dc-bg2 .friendly-link a:hover{
+    color: red;
+}
+.db a{
+    display: inline-block;
+    /*float: left;*/
+    padding: 0  7px;
+    vertical-align: middle;
+}
+.db p{
+    /*border: 1px red solid;*/
+    margin: 10px  0;
+    height: 30px;
+    line-height: 30px;
+    /*color: #B1B2C6;*/
+}

@@ -1,0 +1,136 @@
+
+.icon{
+    display: inline-block;
+    background:url(../images/indexhead_sprite.png);
+}
+/*显示三角号*/
+.icon-btn{
+    width: 14px; 
+    height: 12px;
+    background-position: right -259px;
+    vertical-align: middle;
+}
+/*显示小手机*/
+.icon-phone{
+    width: 12px;
+    height: 18px;
+    background-position: right -231px;
+    vertical-align: middle; /*把此元素放置在父元素的中部。*/
+}
+
+.nav-left-1{
+    height: 34px;
+    line-height: 34px;
+    background: #FF3C3C url("../images/indexhead_sprite.png") no-repeat -104px -1201px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 42px;
+}
+/*显示向右箭头*/
+.nav-left-2 li h3{
+    height: 32px;
+    overflow: hidden;
+    padding-right: 10px;
+    color: #fff;
+    background: url("../images/indexhead_sprite.png") no-repeat 190px -1148px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+}
+.nav2-icon1{
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background:url("../images/nav.png") no-repeat 0px 5px  ;
+}
+.nav2-icon2{
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background:url("../images/nav.png") no-repeat 0px -40px  ;
+}
+.nav2-icon3{
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background:url("../images/nav.png") no-repeat 0px -83px  ;
+}
+.nav2-icon4{
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background:url("../images/nav.png") no-repeat 0px -127px  ;
+}
+.nav2-icon5{
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background:url("../images/nav.png") no-repeat 0px -165px  ;
+}
+.nav2-icon6{
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background:url("../images/nav.png") no-repeat 0px -205px  ;
+}
+.nav2-icon7{
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background:url("../images/nav.png") no-repeat 0px -243px  ;
+}
+.nav2-icon8{
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background:url("../images/nav.png") no-repeat 0px -283px  ;
+}
+.nav2-icon9{
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background:url("../images/nav.png") no-repeat 0px -324px  ;
+}
+.nav2-icon10{
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background:url("../images/nav.png") no-repeat 0px -364px  ;
+}
+.nav2-icon11{
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background:url("../images/nav.png") no-repeat 0px -399px  ;
+}
+.nav2-icon12{
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background:url("../images/nav.png") no-repeat 0px -440px  ;
+}

@@ -1,0 +1,212 @@
+http://1point3acres.com/bbs/thread-229691-1-1.html
+
+
+
+
+
+
+
+
+
+create database 数据库
+建表
+create table 表（
+
+aa int ,
+bb verchar(50),
+)
+加入记录：
+insert into 表 values(),
+ 查询记录
+select*from 表 where 条件
+update 表 set 所修改的内容 where条件
+
+表名的规范
+create table abc
+(test 1 int) 
+字符型数据：
+
+ verchar 、所定类型的字节长度不用的部分会以空格补全
+UNicode 编码英文是以两个字节代表一个英文字母和汉字一样
+非UNicode英文是以一个字节代表一个英文字母 是以两个字符代表一个汉字
+
+nvarchar  长度可变unicode编码
+nchar  定长   unicode编码
+char 定长 非Unicode编码        4000个字符
+varchar 可变  非Unicode编码
+数字型数据：
+int
+bigint 最大
+
+numeric(数字总的位数,小数点后几位即精度)numeric
+
+datetime 表示日期datetime
+
+插入部分字段
+insert into 表（指定字段列表）values （）
+主键
+primary key 主键不允许为空primary key
+
+
+update 表名set age=38 where ID=2
+
+为空时（null）不能用等号只能用is
+
+delete  from  表名 where 条件（如果是多个条件 用and连接 或者的关系用or连接）
+
+
+create datebase empt
+create data dept(
+depno int primary key,
+dname nvarhar(30),
+loc narchar(30))
+
+
+
+
+create table emp
+(
+empno  int primary key
+ename nvarchar(30),
+job nverchar(30),
+
+hiredate datetime,
+sal numeric (10,2);
+comm numeric(10,2),
+deptno int foreign key references dept(deptno)外键
+
+)
+
+insert into dept values (10,'销售部','西安')
+inser into dept values (20,'企划部'，上海)
+insert into dept values (30,'财务部''北京')
+
+inser into emp （empno,ename,job,hiredate,sal,）values (1000,'王伟''财务部'，2014-8-13,3200)
+
+select 列名from 表名where 条件
+select distinct 列名from表名（消除完全一样的行，保留一行）
+like (模糊查询)_ _w%
+
+select 列名 或者别名from表名where条件 
+in(, , ,)多个    in sal（200.2,2420.32）
+
+order by  默认升序  (asc) asc asc ascascasc   asc
+
+select *from emp order by sal desc(降序)
+
+数据分组  avg平均  mun和 max  min 聚合只能显示在select只后 不能显示在where只后
+
+select avg()
+group by分组显示
+having 是对分组、查询结果进行分组筛选 
+
+create database school
+into 数据库名 go
+create table xi(
+xino int,
+grade varchar,
+zhuanye nvarchar,)
+create class(
+)
+
+distinct 合并成一行distinct distinct distinct disrinct distinct 
+多表查询：
+
+select 所要显示的东东
+
+select ename from 
+select *from  emp  where 
+
+同一个表可以有不同的别名，是类连接
+子查询：select 语句中嵌套其他的语句: 单行子查询 多行子查询
+
+select avg(sal)  deptno from emp group by  deptno
+
+select ename, sal,avg()
+在from中使用子查询 即在from后加上临时表
+
+分页查询：
+
+top 前几个？
+
+
+select top
+
+identity （1,2）表示自增 
+
+select distinct*into temp from cat
+delete from cat
+insert into cat  select *from temp, 
+drop table temp
+from 左边的表right join 右边的表 on
+维护数据的完整性 约束（not null）
+
+create table test(
+testId int primary key identity(1,1),
+testname varchar(30) not null||unique
+)
+unique 唯一 ，可以为空只能一个为空，可以放空值 和primary key 相似 但是primary 
+
+不能为空
+create table  goods(
+goodsId nvarchar(50) primary key,
+category int,
+unitprice numeric(10,2) check(uniprice>0 and uniprie<30)
+.....
+)
+create table customer(
+customeriId int primary key,
+name varchar(30) not null,
+email varchar unique,
+sex nchar(1) check  (sex in '男','女')default'男',
+....
+)
+create table 
+
+default 默认值
+
+foreign key references
+
+备份数据库
+backup datebase aaa to disk='路径'
+
+恢复数据库
+restore database ... from disk='路径.psk'
+
+连接数据库 
+加载驱动到内存  ClassforName(sun.jdbc.odbc.JdbcOdbcDriver)
+获取连接   Connection con =DriverManger .getConnection(jdbc:odb:数据源，用户名，密码)；
+编写sql语句  Statement st=con.createStatement();
+
+sm.executeUpdate("SQL语句")；这句话返回值为int类型，可进行添加、
+删除、修改操作
+
+Resultset结果集
+Resultset rs=ps.executeQuery(SQL语句)
+rs.next()返回结果的上一行
+rs.getint(?)是第几个的结果rs.getString(?)
+ClassforName(sun.jdbc.odbc.JdbcOdbcDriver)
+Connection con= DriverManger.getConnection(数据源，用户名，密码)
+       Statement st=con. 
+PreparedStatement ps=con.preparedstatement("SQL语句where ？？")；
+ps.setString(第几个问号，内容)；
+ps.executeUpdate()用于增删该
+rs=ps.executeQuery();查询用这个
+
+项目的流程：  项目开发了流程
+需求分析  审计阶段  编码阶段  测试阶段  
+
+
+http://www.kgc.cn/bbs/post/9474.shtml
+
+
+
+
+
+
+
+
+
+
+
+

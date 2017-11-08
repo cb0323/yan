@@ -1,0 +1,96 @@
+一 HTML常用标签
+M.M&j-j%go_sleep$
+1 基本标签：结构标签   内容标签
+结构标签
+	html-head(title)-body
+内容标签
+	p  h1-h6 
+
+超链接(重点)
+（1）页面间超链接
+<a href="URL" target="">热点文本或图像</a>
+（2）本页面不同内容之间的锚定
+a.html
+<a href="#here">点我</a>
+
+<a name="here">跳到这里来</a>
+
+不同内容之间的锚定
+a.html
+<a href="b.html#here">点我</a>
+b.html
+<a name="here">跳到这里来</a>
+
+（3）邮件
+<a href="mailto:email>联系站长</a>
+
+图像标签<img src="image/1.png"/>
+
+
+特殊符号：&nbsp;
+_____________________________________________________
+二 CSS
+1、样式规则 ：   选择器{属性1：值1；属性2：值2；...}
+如：p{font-size:20px;color:red;}
+2、常用选择器
+标签样式选择器
+	如：p{font-size:20px;color:red;}
+类样式选择器
+	如：
+	.red{color:red;}
+	.green{color:green;}
+
+	<p class="red">第一个段落</p>
+	<p class="green">第二个段落</p>
+	<h1 class="red">hello css</h1>
+ID样式选择器
+	如：
+	#red{color:red;}
+	#green{color:green;}
+
+	<p id="red">第一个段落</p>
+	<p id="green">第二个段落</p>
+3、如何引入CSS？
+（1）行内样式
+<p style="">个性化的段落</p>
+（2）内嵌样式表
+	<style>
+		p{font-size:20px;}
+		#red{color:red;}
+		#green{color:green;}
+	</style>
+
+	<p id="red">第一个段落</p>
+	<p id="green">第二个段落</p>
+	
+（3）外部样式表
+css/style.css		
+#red{color:red;}
+#green{color:green;}
+
+a.html
+<link rel="stylesheet" href="css/style.css">
+b.html
+<link rel="stylesheet" href="css/style.css">
+
+
+4、常用属性
+字体、文本
+	font-size  font-famaily font-weight
+	text-decoration
+        color
+超链接伪类：   a    a:hover
+背景：background
+background-color   background-image        background-position
+
+
+
+
+
+
+
+
+
+
+
+
